@@ -54,20 +54,20 @@ votent pas.
 
 # Articles
 
-## [Article : « Comment on juge l’asile, L’institution comme agent moral » - Didier Fassin & Carolina Kobelinsky (2012), 31 pages](https://www.cairn.info/revue-francaise-de-sociologie-1-2012-4-page-657.htm){:target="_blank"}
+## ["Comment on juge l’asile, L’institution comme agent moral" - Didier Fassin & Carolina Kobelinsky (2012), 31 pages](https://www.cairn.info/revue-francaise-de-sociologie-1-2012-4-page-657.htm){:target="_blank"}
 
 Enquête de terrain sur les raisons et les motivations pour lesquelles les magistrat.e.s.x attribuent ou non l’asile aux personnes qui ont fuit leur pays et demandent l’asile politique
 en France.
 
 
-## [Du corps humain comme marchandise, Mythe primitiviste et harcèlement photographique dans la vallée de l’Omo, Éthiopie – Serge Tornay (2009), 13 pages](https://shs.cairn.info/revue-afrique-et-histoire-2009-1-page-331?lang=fr){:target="_blank"}
+## ["Du corps humain comme marchandise, Mythe primitiviste et harcèlement photographique dans la vallée de l’Omo, Éthiopie" – Serge Tornay (2009), 13 pages](https://shs.cairn.info/revue-afrique-et-histoire-2009-1-page-331?lang=fr){:target="_blank"}
 
 Tornay analyse la manière des « explorateu ces » de promouvoir certaines régions du
 monde par la photographie, dans un esprit néocolonial et peu remis en question.
 Tornay tient aussi à montrer comment les modèles gardent une certaine agentivité,
 malgré la domination qui est exercée sur ell x par les touristes blan es .
 
-## [Les femmes musulmanes et le « droit de choisir librement » - Lila Abu-Lughod (2018), 23 pages](https://www.erudit.org/fr/revues/as/2018-v42-n1-as03619/1045123ar/){:target="_blank"}
+## ["Les femmes musulmanes et le « droit de choisir librement »" - Lila Abu-Lughod (2018), 23 pages](https://www.erudit.org/fr/revues/as/2018-v42-n1-as03619/1045123ar/){:target="_blank"}
 
 À travers le cliché des femmes musulmanes qui ne peuvent pas choisir librement du
 port du voile, Abu-Lughod déconstruit la supposée injonction qui serait réalisée sur ces

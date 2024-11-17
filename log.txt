@@ -1,10 +1,8 @@
 
 mail open contact
 
-Base de donné à gauche //
+Base de donné en bas 
 
 Insert + petit 65%
-
-
 
 

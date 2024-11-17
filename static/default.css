@@ -18,7 +18,7 @@ body {
 .zoe {
 	font-family: 'atlas'; /* Exemple de police pour Atlas Collectif */
 	color: #3d47b6;
-	font-size: 1em;
+	font-size: 0.7em;
 	background-image: url(img/ellipse.png);
 	background-repeat: no-repeat;
 	background-size: 50%;
@@ -351,10 +351,10 @@ strong {
 }
 
 .wdesc img, #gallery img {
-	align-items: center;
 	margin: 5px;
 	max-width: 70%;
-	height: auto;
+	height: 80vh;
+	width: auto;
 }
 
 video {
