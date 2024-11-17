@@ -10,7 +10,6 @@ body {
 	padding: 0px 0px 0px 18px;
 }
 
-
 .logo-image p {
 	font-size: 2.1em;
 }
@@ -34,11 +33,6 @@ a {
 }
 
 
-
-.fanzine {
-	font-family: 'fanzine'; /* Exemple de police pour Fanzine Festival */
-}
-
 i {
 	font-style: normal!important;
 	font-family: 'atlas';
@@ -52,8 +46,6 @@ ul {
 	padding-inline-start: 2px;
 }
 
-
-
 li {
 	margin-bottom: 10px;
 	background-color: transparent;
@@ -65,9 +57,6 @@ li {
 li:hover {
 	color: #3d47b6;
 }
-
-
-
 
 #menu ul {
 	display: flex;
@@ -215,10 +204,6 @@ h5 {
 }
 
 
-img {
-	width: 100%;
-	height: auto;
-}
 
 .cartel {
 	width: 20vw;
@@ -298,9 +283,11 @@ p {
 	text-align: justify;
 	translate: 10vw;
 	font-size: 0.95em;
+	/*
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	*/
 }
 
 /* Style pour les paragraphes qui contiennent un élément <strong> */
@@ -327,8 +314,8 @@ p a {
 p img {
 	display: block;
 	margin: 0 auto;
-	max-width: 100%;
-	height: auto;
+/*	max-width: 100%;*/
+	height: 75vh;
 }
 
 strong {
@@ -345,12 +332,12 @@ strong {
 	text-indent: 0vw;
 	font-weight: bold;
 	width: inherit;
-/*	transform: translateY(-7vh);*/
+	/*	transform: translateY(-7vh);*/
 	translate: inherit;
 	color: #3d47b6;
 }
 
-.wdesc img, #gallery img {
+.wdesc img, {
 	margin: 5px;
 	max-width: 70%;
 	height: 80vh;
@@ -366,43 +353,6 @@ video {
 }
 
 
-
-iframe {
-	width: -webkit-fill-available;
-	height: 500px;
-}
-
-
-#gal {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
-	grid-gap: 1px;
-	justify-content: center;
-	margin: 1px;
-}
-
-.img_containers {
-	position: relative;
-	overflow: hidden;
-	display: grid;
-	justify-items: center;
-	justify-content: center;
-	align-items: center;
-	align-content: space-around;
-}
-
-.img_containers img {
-	width: 100%;
-}
-
-.fullImg {
-	grid-column: span 4;
-	height: auto!important;
-}
-
-.fullImg img {
-	width: 70%;
-}
 
 em img, em video {
 	display: block;
@@ -428,26 +378,6 @@ p em a:hover {
 }
 
 
-/* Autres éléments */
-.wdesc iframe {
-	width: 90vw;
-	height: 250px;
-	margin-left: 5vw;
-}
-
-
-/* Galerie */
-#gal {
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.img_containers img {
-	max-width: 100%;
-}
-
-.fullImg img {
-	width: 80%;
-}
 
 em img, em video {
 	width: 60%;
@@ -512,6 +442,19 @@ em video {
 		padding: 0px ;
 	}
 
+	.wdesc {
+		color: #626262;
+		width: unset;
+		padding: 0px 10px 0px 10px;
+	}
+
+	.wdesc img, #gallery img {
+		margin: 5px;
+		max-width: 70%;
+		height: unset;
+		width: auto;
+	}
+
 
 	/* Paragraphes et titres */
 	p {
@@ -547,8 +490,6 @@ em video {
 		text-align: justify;
 		font-size: 1em;
 	}
-
-
 
 	p:not(:has(img)) {
 		text-indent: 5px;

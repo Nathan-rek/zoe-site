@@ -8,13 +8,9 @@ body {
 
 .logo-image {
 	padding: 0px 0px 0px 18px;
+
 }
 
-
-
-.logo-image p {
-	font-size: 2.1em;
-}
 
 .zoe {
 	font-family: 'atlas'; /* Exemple de police pour Atlas Collectif */
@@ -268,36 +264,12 @@ img {
 	width: 100%;
 }
 
-.wdesc iframe {
-	width: 50vw;
-	height: 4vh;
-	transition: height 0.5s ease-in-out;
-	translate: 10vw;
-}
 
-.wdesc iframe:hover {
-	height: 40vh;
-}
-
-
-table {
-	width: 61vw;
-	border-collapse: collapse;
-	margin-bottom: 20px;
-	translate: 10vw;
-}
-
-th, td {
-	padding: 10px;
-	text-align: center;
-	border: 1px solid #ddd;
-}															
 
 
 /* Appliquer des styles aux paragraphes qui ne contiennent pas d'images */
 p:not(:has(img)) {
 	text-indent: 15px;
-	padding: 1px;
 	margin: 0px 0px 40px;
 }
 
@@ -378,40 +350,6 @@ video {
 }
 
 
-
-
-
-#gal {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
-	grid-gap: 1px;
-	justify-content: center;
-	margin: 1px;
-}
-
-.img_containers {
-	position: relative;
-	overflow: hidden;
-	display: grid;
-	justify-items: center;
-	justify-content: center;
-	align-items: center;
-	align-content: space-around;
-}
-
-.img_containers img {
-	width: 100%;
-}
-
-.fullImg {
-	grid-column: span 4;
-	height: auto!important;
-}
-
-.fullImg img {
-	width: 70%;
-}
-
 em img, em video {
 	display: block;
 	margin: 50px auto;
@@ -436,106 +374,102 @@ p em a:hover {
 }
 
 
-@font-face {
-	font-family: "Whois";
-	src: url("../static/font/MinionVariableConcept-Italic.otf");
+
+em img, em video {
+	max-width: 100%;
+	height: auto;
 }
 
-@font-face {
-	font-family: "police2";
-	src: url("../static/font/MinionVariableConcept-Italic.otf");
+em video {
+	max-width: 300px;
+	height: auto;
 }
+
+
+
+
 
 @media only screen and (max-width: 767px) {
-	/* Réglages généraux */
 	body {
+		margin: 5px;
+		padding: 5px;
 		font-size: 0.9em;
+		overflow-x: hidden; /* Empêche le débordement horizontal */
 	}
 
+	.logo-image p {
+		font-size: 1em;
+		padding: 0px 0px 0px 0px;
+	}
+
+	.logo-image {
+		padding: 0px 0px 0px 0px;
+	}
 
 	.zoe {
-		font-family: 'atlas'; /* Exemple de police pour Atlas Collectif */
-		color: #3d47b6;
-		font-size: 1em;
-		background-image: url(img/ellipse.png);
-		background-repeat: no-repeat;
-		/*		background-size: contain;*/
-		background-position: right;
-
-		display: inline-block;
-	}
-
-	.article {
-		display: flex;
-		padding: 0px;
-		flex-direction: column;
+		background-size: contain;
+		background-position: center;
+		padding: 10px;
+		overflow: hidden; /* Coupe tout débordement interne */
 	}
 
 	/* Menu */
 	#menu ul {
-		display: flex;
-		flex-wrap: wrap;
+		flex-direction: column;
 		justify-content: center;
+		width: 100%;
+		overflow-x: hidden; /* S'assure que les éléments ne débordent pas horizontalement */
 	}
 
 	#menu li {
-		margin: 5px;
-		flex-basis: 45%; /* Ajustez selon vos besoins */
+		margin: 5px 0;
+		width: 100%;
+		text-align: center;
 	}
 
 	#menu a {
-		padding: 5px;
 		font-size: 0.8em;
+		padding: 10px;
+		display: block;
+		text-align: center;
 	}
 
-	/* Logo */
-	.logo-image p {
-		font-size: 1.5em;
-	}
-
-
-	/* Paragraphes et titres */
+	/* Paragraphes */
 	p {
+		font-size: 0.8em;
 		text-indent: 5px;
-		text-align: justify;
-		font-size: 0.6em;
 		width: auto;
+		margin: 10px 0;
+		translate: 0vw;
 	}
 
-	/* Style pour les paragraphes qui contiennent un élément <strong> */
-	p:has(strong) {
-		border: 2px dotted black;
+	p:has(strong),
+	p:has(em),
+	p:has(u) {
 		padding: 10px;
 	}
 
-
-	p:has(em) {
-		display: block;
+	.article h1 {
+		font-size: 1.5em;
+		margin: unset;
 	}
-
-	p:has(u) {
-		display: block;
-	}
-
-
-	h1 {
-		text-align: justify;
-		font-size: 1em;
-	}
-
 
 	h2, h3, h4, h5 {
+		font-size: 0.9em;
+		translate: 0vw;
+		width: inherit;
 
-		text-align: justify;
-		font-size: 0.6em;
 	}
 
 	/* Cartel */
 	.cartel {
 		width: 100%;
+		margin: inherit;
+		padding: unset;
 		display: flex;
 		flex-direction: column;
-		align-items: stretch;
+		align-items: flex-start;
+		overflow: hidden; /* Empêche les débordements */
 	}
 
 	.cartel img {
@@ -544,45 +478,30 @@ p em a:hover {
 	}
 
 	.cartel p {
-		transform: translateY(-5vh);
+		font-size: 0.8em;
+		transform: translateY(0);
+	}
+
+	/* Articles */
+	.article {
+		flex-direction: column;
+		padding: 0px 0px;
+		overflow: hidden;
+
+	}
+
+	/* Descriptions */
+	.wdesc {
 		font-size: 0.9em;
+		width: 100%;
 	}
 
-	/* Autres éléments */
-	.wdesc iframe {
-		width: 90vw;
-		height: 250px;
-		margin-left: 5vw;
-	}
-
-	table {
-		font-size: 0.6em;
-	}
-
-	/* Galerie */
-	#gal {
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	}
-
-	.img_containers img {
-		max-width: 100%;
-	}
-
-	.fullImg img {
-		width: 80%;
-	}
-
-	em img, em video {
-		width: 60%;
-	}
-
-	em video {
-		width: 300px;
-	}
 
 
 
 }
+
+
 
 
 @font-face {
