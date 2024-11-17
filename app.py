@@ -115,7 +115,7 @@ def info():
     try:
         page = pages.get_or_404('info')
         catList = Liste_cat()
-        return render_template('staticpage.html', page=page, catList=catList)
+        return render_template('single.html', page=page, catList=catList)
     except Exception as e:
         return str(e), 500
 
@@ -152,13 +152,16 @@ def serve_pages(path):
 def index():
     try:
         random_image = get_random_image()
-        articles = (p for p in pages if 'published' in p.meta)
+        articles = (p for p in pages if 'published' in p.meta and 'author' in p.meta and p.meta['author'].lower() == 'zoe')
         latest = sorted(articles, reverse=True, key=lambda p: p.meta['published'])
+        print(f"Nombres d'articles trouvés : {len(latest)}")
         catList = Liste_cat()
         authorsList = Liste_authors()
         return render_template('index.html', articles=latest, catList=catList, authorsList=authorsList, random_image=random_image)
     except Exception as e:
+        print(f"Erreur : {e}")
         return str(e), 500
+
 
 @app.errorhandler(404)
 def page_not_found(e):

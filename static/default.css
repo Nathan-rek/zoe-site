@@ -345,7 +345,7 @@ strong {
 	text-indent: 0vw;
 	font-weight: bold;
 	width: inherit;
-	transform: translateY(-7vh);
+/*	transform: translateY(-7vh);*/
 	translate: inherit;
 	color: #3d47b6;
 }

@@ -1,6 +1,6 @@
 title: Otakisme et hétérotopies
 published: 2024-11-11
-author: Zoé
+author: zoe
 cat: default
 desc : 
 cover: 

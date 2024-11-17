@@ -1,6 +1,6 @@
 title: La violence des bénévoles
 published: 2024-07-01
-author: Zoé
+author: zoe
 cat: default
 desc : 
 cover: 

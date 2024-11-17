@@ -1,6 +1,6 @@
 title: Hypersexualisation dans les relations lesbiennes
 published: 2024-08-01
-author: Zoé
+author: zoe
 cat: none
 desc : 
 cover: 

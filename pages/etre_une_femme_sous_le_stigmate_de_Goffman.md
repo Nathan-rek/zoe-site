@@ -1,6 +1,6 @@
 title: Être une femme sous le stigmate de Goffman
 published: 2024-07-15
-author: Zoé
+author: zoe
 cat: none
 desc : 
 cover: 

@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<div class="main">
-				<div class="logo-image">
+			<div class="logo-image">
 				<a href="http://qamo9384.odns.fr/zoe-text/" aria-label="Accueil">
 					<h1>
 						<span class="zoe">
@@ -19,35 +19,32 @@
 						</span>
 					</h1>
 				</a>
-
 			</div>
 
 			<div id="works">   
 				{% for article in articles %}
 				<div class="work">
 					<a href="{{ url_for('page', path=article.path) }}">
-
+						<!-- Contenu de l'article -->
 					</a>
 					<a href="{{ url_for('page', path=article.path) }}">
 						<div class="wdesc">
-							<!--							<h2>{{ article.meta.author }}</h2>-->
 							<h2>{{ article.title }}</h2>
 						</div>
 					</a>
 				</div>
 				{% endfor %}
 			</div>
-
-
-
-
 		</div>
+
+		<footer>
+			<ul>
+				<h2><a href="zoe-text/base">Références et base de données</a></h2>
+			</ul>
+		</footer>
+
 		<!-- Scripts moved just before closing body tag -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
-
-
 	</body>
-
-
 </html>
