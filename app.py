@@ -86,6 +86,7 @@ def page(path):
         selectedAuthor = page.meta.get('author', '')
         selectedcat = page.meta.get('cat', '')
         articles = [p for p in pages if 'published' in p.meta]
+        articles = sorted(articles, key=lambda p: p.meta['published'], reverse=True)
         
         if imgs:
             return render_template('single.html', 
