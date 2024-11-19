@@ -433,9 +433,11 @@ em video {
 		font-size: 0.8em;
 	}
 
-	/* Logo */
-	.logo-image p {
-		font-size: 1.5em;
+	
+	
+	.logo-image {
+		padding: 0px 0px 0px 0px;
+		text-align: end;
 	}
 
 	.logo-image  {
