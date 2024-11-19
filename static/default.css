@@ -314,7 +314,7 @@ p a {
 p img {
 	display: block;
 	margin: 0 auto;
-/*	max-width: 100%;*/
+	/*	max-width: 100%;*/
 	height: 75vh;
 }
 
@@ -430,7 +430,7 @@ em video {
 
 	#menu a {
 		padding: 5px;
-		font-size: 0.6em;
+		font-size: 0.8em;
 	}
 
 	/* Logo */
@@ -450,9 +450,9 @@ em video {
 
 	.wdesc img, #gallery img {
 		margin: 5px;
-		max-width: 70%;
-		height: unset;
-		width: auto;
+		/* max-width: 70%; */
+		height: auto;
+		width: 100%;
 	}
 
 
@@ -511,7 +511,7 @@ em video {
 		display: flex;
 		flex-direction: column;
 		align-items: stretch;
-		padding: 0px;
+		padding: 0px 10px 0px 10px;
 	}
 
 	.cartel img {
@@ -521,7 +521,7 @@ em video {
 
 	.cartel p {
 		transform: translateY(0vh);
-		font-size: 0.6em;
+		font-size: 0.8em;
 	}
 }
 
