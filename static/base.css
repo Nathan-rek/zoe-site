@@ -441,7 +441,7 @@ em video {
 
 	/* Paragraphes */
 	p {
-		font-size: 0.8em;
+		font-size: 1.2em;
 		text-indent: 5px;
 		width: auto;
 		margin: 10px 0;
@@ -455,7 +455,7 @@ em video {
 	}
 
 	.article h1 {
-		font-size: 1.5em;
+		font-size: 2em;
 		margin: unset;
 	}
 
@@ -488,7 +488,7 @@ em video {
 	}
 
 	.cartel p {
-		font-size: 0.8em;
+		font-size: 1.2em;
 		transform: translateY(0);
 	}
 
@@ -504,6 +504,12 @@ em video {
 	.wdesc {
 		font-size: 0.9em;
 		width: 100%;
+	}
+
+	a {
+		color: #626262;
+		transition-duration: 0.2s,;
+		font-size: 1.6em;
 	}
 
 

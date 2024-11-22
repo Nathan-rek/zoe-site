@@ -433,8 +433,8 @@ em video {
 		font-size: 0.8em;
 	}
 
-	
-	
+
+
 	.logo-image {
 		padding: 0px 0px 0px 0px;
 		text-align: end;
@@ -490,13 +490,16 @@ em video {
 	h2, h3, h4, h5 {
 
 		text-align: justify;
-		font-size: 1em;
+		font-size: 1.6em;
 	}
+
+
 
 	p:not(:has(img)) {
 		text-indent: 5px;
 		padding: 1px; 
 		margin: 0px 0px 20px;
+		font-size: 1.2em ;
 	}
 
 
@@ -506,6 +509,10 @@ em video {
 		translate: 0;
 	}
 
+	h4 {
+
+		margin: 0px 0px 50px;
+	}
 
 	/* Cartel */
 	.cartel {
@@ -524,6 +531,10 @@ em video {
 	.cartel p {
 		transform: translateY(0vh);
 		font-size: 0.8em;
+	}
+
+	h2 {
+		font-size: 1.2em;
 	}
 }
 

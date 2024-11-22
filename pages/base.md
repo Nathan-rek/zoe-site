@@ -2,8 +2,8 @@ title: Références et base de données
 published: 2024-06-01
 author: Zoé
 cat: base
-desc : 
-cover: 
+desc :
+cover:
 
 ...
 
