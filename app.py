@@ -7,7 +7,7 @@ FLATPAGES_EXTENSION = '.md'
 FLATPAGES_AUTO_RELOAD = True
 
 app = Flask(__name__)
-app.config['APPLICATION_ROOT'] = '/atlas-programation'
+app.config['APPLICATION_ROOT'] = '/compositions'
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 FLATPAGES_MARKDOWN_EXTENSIONS = ['extra']
 FLATPAGES_EXTENSION_CONFIGS = {
@@ -169,4 +169,4 @@ def page_not_found(e):
     return "Problem", 404
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5001, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
